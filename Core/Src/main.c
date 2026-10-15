@@ -105,8 +105,8 @@ float angle_err_sum = 0.0f;
 volatile int16_t pulse_delta;
 volatile float speed_rpm_raw = 0.0f;
 volatile float speed_rpm = 0.0f;
-#define MOTOR_PPR 11.0f      // 电机轴单通道每圈脉冲数，请按实际编码器修改
-#define REDUCE_RATIO 30.0f
+#define MOTOR_PPR 13.0f      // 电机轴单通道每圈脉冲数，请按实际编码器修改
+#define REDUCE_RATIO 48.0f
 #define ENCODER_MULTIPLIER 4.0f // TIM3使用TI12模式，对AB相进行4倍频计数
 #define ENCODER_DIRECTION 1.0f  // 若正转时测速为负，改为-1.0f
 #define SPEED_LOOP_DT 0.010f    // TIM4控制周期：10 ms
